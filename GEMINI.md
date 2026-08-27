@@ -29,3 +29,8 @@
   3. **Regression & Side Effects**: Ensure dependent components or unmodified behaviors are not broken.
   4. **Diff Cleanliness**: Remove temporary debug logs, print statements, or accidental formatting noise.
 - **Subagent Delegation**: For large or high-risk refactors, delegate diff analysis to an independent review subagent before concluding the task.
+
+## 6. Reflexion & Episodic Memory (Continuous Learning)
+- **Post-Failure Self-Critique**: When an approach fails, encounters a subtle bug, or hits an unexpected project gotcha, record a concise note of the root cause and solution in `.gemini/knowledge/` or `learned_patterns.md`.
+- **Anti-Pattern Prevention**: Check existing project lessons before attempting solutions to ensure previously failed approaches or incompatible APIs are not repeated.
+- **Continuous Rule Evolution**: Persist newly discovered workspace quirks, build quirks, or user preferences so subsequent sessions benefit from past experience.

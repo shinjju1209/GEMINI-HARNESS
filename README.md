@@ -9,6 +9,7 @@ AI 코딩 에이전트의 개발 성능을 극대화하고 예기치 않은 돌�
 3. **Minimal & Surgical Edits**: 요청 범위 외 불필요한 코드 리팩토링 및 포맷팅 변경 방지
 4. **Think & Plan First**: 다중 파일 변경 시 단계별 구현 계획 사전 수립
 5. **Generator-Critic / Adversarial Review Loop**: 완료 전 `git diff` 비평가 관점 자가 검토 및 보안/경계값 검증
+6. **Reflexion & Episodic Memory**: 실패 원인 및 프로젝트 함정(Gotchas) 기록을 통한 반복 실수 방지 및 지속적 학습
 
 ## 🚀 다른 컴퓨터에서 사용하는 방법
 
@@ -16,11 +17,10 @@ AI 코딩 에이전트의 개발 성능을 극대화하고 예기치 않은 돌�
 
 ```bash
 # 1. 저장소 클론
-git clone <YOUR_REMOTE_REPO_URL> gemini-harness
-cd gemini-harness
+git clone git@github.com:shinjju1209/GEMINI-HARNESS.git ~/GEMINI-HARNESS
 
 # 2. 전역 설정 설치 (~/.gemini/config/ 에 자동 복사)
-./install.sh
+cd ~/GEMINI-HARNESS && ./install.sh
 ```
 
 ### 특정 프로젝트에만 개별 적용하고 싶을 때
