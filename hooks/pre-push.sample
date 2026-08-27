@@ -1,0 +1,8 @@
+#!/bin/sh
+# Git Pre-Push Hook: Guardrail against unconfirmed AI agent pushes
+if [ "$ALLOW_PUSH" != "1" ]; then
+  echo "❌ [BLOCKED] Direct 'git push' is disabled by default."
+  echo "👉 If you really intend to push, run: ALLOW_PUSH=1 git push"
+  exit 1
+fi
+exit 0
