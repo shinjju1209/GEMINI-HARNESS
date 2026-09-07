@@ -11,6 +11,9 @@ AI 코딩 에이전트의 개발 성능을 극대화하고 예기치 않은 돌�
 5. **Generator-Critic / Adversarial Review Loop**: 완료 전 `git diff` 비평가 관점 자가 검토 및 보안/경계값 검증
 6. **Reflexion & Episodic Memory**: 실패 원인 및 프로젝트 함정(Gotchas) 기록을 통한 반복 실수 방지 및 지속적 학습
 7. **Grounding & Hallucination Prevention**: 자료 검색 시 엄격한 근거 기반 응답, 모름/불확실성 솔직한 명시, 가짜 출처(URL/논문) 날조 방지 및 다단계 사실 검증
+8. **Anti-Doom Loop & Recovery Ladder**: 동일 에러 2회 반복 실패 시 땜질식 수정 즉각 차단 및 가설 피벗, 3회 실패 시 사용자 보고
+9. **Context Hygiene & Anti-Rot**: 거대 로그 슬라이싱 및 심볼 정의 중심 로드로 토큰 낭비 및 Lost in the Middle 방지
+10. **Deterministic Exit Contract**: 주관적 완료 선언 금지, `git diff` 확인 + 타입체커 0에러 + 테스트 통과 기계적 증거 필수
 
 ## 🚀 다른 컴퓨터에서 사용하는 방법
 
