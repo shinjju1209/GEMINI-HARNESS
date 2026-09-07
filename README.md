@@ -10,17 +10,29 @@ AI 코딩 에이전트의 개발 성능을 극대화하고 예기치 않은 돌�
 4. **Think & Plan First**: 다중 파일 변경 시 단계별 구현 계획 사전 수립
 5. **Generator-Critic / Adversarial Review Loop**: 완료 전 `git diff` 비평가 관점 자가 검토 및 보안/경계값 검증
 6. **Reflexion & Episodic Memory**: 실패 원인 및 프로젝트 함정(Gotchas) 기록을 통한 반복 실수 방지 및 지속적 학습
+7. **Grounding & Hallucination Prevention**: 자료 검색 시 엄격한 근거 기반 응답, 모름/불확실성 솔직한 명시, 가짜 출처(URL/논문) 날조 방지 및 다단계 사실 검증
 
 ## 🚀 다른 컴퓨터에서 사용하는 방법
 
 새로운 컴퓨터에서 이 저장소를 클론한 후 설치 스크립트를 실행하면 전역 설정으로 자동 적용됩니다.
 
+### Linux / macOS
 ```bash
 # 1. 저장소 클론
 git clone git@github.com:shinjju1209/GEMINI-HARNESS.git ~/GEMINI-HARNESS
 
 # 2. 전역 설정 설치 (~/.gemini/config/ 에 자동 복사)
 cd ~/GEMINI-HARNESS && ./install.sh
+```
+
+### Windows (PowerShell)
+```powershell
+# 1. 저장소 클론
+git clone https://github.com/shinjju1209/GEMINI-HARNESS.git ~/GEMINI-HARNESS
+
+# 2. 전역 설정 설치
+cd ~/GEMINI-HARNESS
+powershell -ExecutionPolicy Bypass -File .\install.ps1
 ```
 
 ### 특정 프로젝트에만 개별 적용하고 싶을 때
